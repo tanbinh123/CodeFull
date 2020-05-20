@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry exported="true" kind="con" path="net.sf.jasperreports.JR_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="com.jaspersoft.server.JRS_CONTAINER"/>
+	<classpathentry kind="lib" path="libs/spring/spring-beans-5.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring/spring-core-5.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring/spring-expression-5.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/castor-core-1.4.1.jar"/>
+	<classpathentry kind="lib" path="libs/castor-xml-1.4.1.jar"/>
+	<classpathentry kind="lib" path="libs/commons-beanutils-1.9.3.jar"/>
+	<classpathentry kind="lib" path="libs/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="libs/groovy-all-2.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/itextpdf-5.5.0.jar"/>
+	<classpathentry kind="lib" path="libs/joda-time-2.10.3.jar"/>
+	<classpathentry kind="lib" path="libs/JPanelSlider.jar"/>
+	<classpathentry kind="lib" path="libs/js-extra-classes.jar"/>
+	<classpathentry kind="lib" path="libs/org.eclipse.jdt.core-3.18.0.jar"/>
+	<classpathentry kind="lib" path="libs/sqljdbc42.jar"/>
+	<classpathentry kind="lib" path="libs/itext-pdfa-5.5.0.jar"/>
+	<classpathentry kind="lib" path="libs/itext-2.1.7.js4.jar"/>
+	<classpathentry kind="lib" path="libs/jxl-2.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

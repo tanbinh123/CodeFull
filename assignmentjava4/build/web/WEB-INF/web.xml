@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>UserController</servlet-name>
+        <servlet-class>com.poly.servlet.UserController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CategoryController</servlet-name>
+        <servlet-class>com.poly.servlet.CategoryController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductController</servlet-name>
+        <servlet-class>com.poly.servlet.ProductController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserController</servlet-name>
+        <url-pattern>/UserController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CategoryController</servlet-name>
+        <url-pattern>/CategoryController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductController</servlet-name>
+        <url-pattern>/ProductController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            20
+        </session-timeout>
+    </session-config>
+    <filter>
+        <filter-name>RequestLoggingFilter</filter-name>
+        <!-- mandatory -->
+        <filter-class>com.poly.config.RequestFilter</filter-class>
+        <!-- mandatory -->
+    </filter>
+    <filter-mapping>
+        <filter-name>RequestLoggingFilter</filter-name>
+        <!-- mandatory -->
+        <url-pattern>/*</url-pattern>
+        <!-- either url-pattern or servlet-name is mandatory -->
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+    
+    <context-param>
+        <description>Location to store uploaded file</description>
+        <param-name>file-upload</param-name>
+        <param-value>
+            C:\Users\thanh\Documents\NetBeansProjects\assignmentjava4\web\Image\
+        </param-value>
+    </context-param>
+</web-app>

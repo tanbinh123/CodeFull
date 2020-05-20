@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ve" pageWidth="700" pageHeight="400" orientation="Landscape" columnWidth="660" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="b7c0a3ab-449f-4871-bf9c-08fb6a81c3d9">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="IlZlIiAsMTUsMTUsZWFjZGRlYjYtNjllOS00ZDNkLWJjY2MtNmU1MjRlN2UzZmIzOw=="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SQL Server QuanLyRapPhim"/>
+	<parameter name="maVe" class="java.lang.String"/>
+	<parameter name="thuMucHinh" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[exec sp_XuatVe $P{maVe}]]>
+	</queryString>
+	<field name="maVe" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="maVe"/>
+	</field>
+	<field name="tenPhim" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tenPhim"/>
+	</field>
+	<field name="tenPhongChieu" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tenPhongChieu"/>
+	</field>
+	<field name="maGhe" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="maGhe"/>
+	</field>
+	<field name="ngayChieu" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="ngayChieu"/>
+	</field>
+	<field name="gioChieu" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.label" value="gioChieu"/>
+	</field>
+	<field name="moTa" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="moTa"/>
+	</field>
+	<field name="giaVe" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="giaVe"/>
+	</field>
+	<field name="ngayTao" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="ngayTao"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="125">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle>
+				<reportElement x="-20" y="0" width="700" height="125" backcolor="#353C44" uuid="ac0380a1-ebbc-44dd-b68d-b35eb3e32b0f">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="-10" y="10" width="360" height="20" forecolor="#2E9E9E" uuid="ad3e8fb2-fff1-4e68-9920-a73613572c85"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[httcinema.netlify.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="30" width="360" height="70" forecolor="#2E9E9E" uuid="cf508213-f2dc-4e5e-83a1-9f9afa9f0849">
+					<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+					<property name="com.jaspersoft.studio.unit.spacingAfter" value="px"/>
+				</reportElement>
+				<box leftPadding="0">
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="42" isBold="true"/>
+					<paragraph lineSpacingSize="0.0" spacingBefore="0" spacingAfter="0"/>
+				</textElement>
+				<text><![CDATA[HTT CINEMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="10" width="320" height="20" forecolor="#FFFFFF" uuid="bfd7118e-2d20-4883-a7ba-de502d31fcab"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CÔNG TY TNHH HTT CINEMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="30" width="320" height="20" forecolor="#FFFFFF" uuid="78b1d147-a33c-4440-a1c6-a2d6c2077d42"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="11"/>
+				</textElement>
+				<text><![CDATA[Số 260 Bình Quới, P. 28, Q. Bình Thạnh, TP. HCM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="50" width="320" height="20" forecolor="#FFFFFF" uuid="32c2a962-14a3-42b6-b7ad-704c1bbb2084"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="11"/>
+				</textElement>
+				<text><![CDATA[Điện Thoại: (08) 28368489]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="70" width="320" height="20" forecolor="#FFFFFF" uuid="a5ae429d-d0e8-47da-bd5e-d00c13abdaa3"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="11"/>
+				</textElement>
+				<text><![CDATA[Mã số thuế:  0154879653]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="275" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle>
+				<reportElement x="-20" y="-1" width="700" height="276" backcolor="#353C44" uuid="b883388b-f2e8-4144-8bdf-ec2e2a77e13e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0" lineColor="#353C44"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="20" y="9" width="390" height="40" forecolor="#FFFFFF" uuid="106d603e-f2cd-440d-b9b0-65d9d48ec4ee"/>
+				<textElement>
+					<font fontName="SansSerif" size="25" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tenPhim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="49" width="190" height="30" forecolor="#FFFFFF" uuid="8bb0abb5-a552-49ce-8791-55cc282a785e"/>
+				<textElement>
+					<font fontName="SansSerif" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[DATEFORMAT($F{ngayChieu},"dd-MM-yyyy (EEE)")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="49" width="200" height="30" forecolor="#FFFFFF" uuid="862c8550-5cf4-438e-ab22-69fa81e49320"/>
+				<textElement>
+					<font fontName="SansSerif" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[DATEFORMAT($F{gioChieu}, "HH:mm")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="79" width="50" height="40" forecolor="#FFFFFF" uuid="10073b14-7c0e-4040-8803-3fb823c368aa"/>
+				<textElement>
+					<font fontName="SansSerif" size="25" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tenPhongChieu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="79" width="140" height="40" forecolor="#FFFFFF" uuid="f8d43ea1-babc-4537-84b2-647c51bf1db3"/>
+				<textElement>
+					<font fontName="SansSerif" size="25" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{maGhe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="70" y="120" width="140" height="30" forecolor="#FFFFFF" uuid="a6a148f6-1f94-48f3-ac05-c56556141e87"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ghế]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="219" width="320" height="30" forecolor="#FFFFFF" uuid="e1614745-f10a-4e84-9a5d-10f6fb8727c7"/>
+				<textElement>
+					<font fontName="SansSerif" size="19"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{maVe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="219" width="70" height="30" forecolor="#FFFFFF" uuid="b6f4218b-d539-4428-b639-4b59a1bc8d46"/>
+				<textElement>
+					<font fontName="SansSerif" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mã vé: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="119" width="50" height="31" forecolor="#FFFFFF" uuid="449fcbcb-2c4c-492b-9fef-4b32618c6b48"/>
+				<textElement>
+					<font fontName="SansSerif" size="16"/>
+				</textElement>
+				<text><![CDATA[Rạp]]></text>
+			</staticText>
+			<image hAlign="Right" vAlign="Middle">
+				<reportElement x="410" y="10" width="260" height="200" uuid="a1be4a94-5647-4720-b879-5fb05472e644"/>
+				<imageExpression><![CDATA[$P{thuMucHinh} + "app-logo-3.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="151" y="180" width="259" height="30" forecolor="#FFFFFF" uuid="ada0331f-7ccf-4d80-adc4-8f7bb73d7dda"/>
+				<textElement>
+					<font fontName="SansSerif" size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{moTa}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.#### VND;#,##0.####">
+				<reportElement x="20" y="180" width="120" height="30" forecolor="#FFFFFF" uuid="7128da4f-6666-428c-a295-a52639f5eec1"/>
+				<textElement>
+					<font fontName="SansSerif" size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{giaVe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="234" width="260" height="30" forecolor="#FFFFFF" uuid="2f96b769-9150-4e25-a640-0039e849cb80"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[DATEFORMAT($F{ngayTao},"dd-MM-yyyy (EEE) HH:mm:ss ")]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

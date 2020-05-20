@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab4;
+
+import java.util.*;
+
+/**
+ *
+ * @author thanh
+ */
+public class bai1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int max = sc.nextInt();
+        int min = sc.nextInt();
+        double tong = 0;
+        double dem = 0;
+        double trungbinh = 0;
+        int i = min;
+        while(i<=max){
+        if(i%5==0){
+            tong = tong + i;
+            dem++;
+        }
+    }
+        trungbinh = tong/dem;
+        System.out.println("trung bình là: " +trungbinh);
+    }
+    
+}

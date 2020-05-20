@@ -1,0 +1,27 @@
+SMAP
+insert_002duser_jsp.java
+JSP
+*S JSP
+*F
++ 0 insert-user.jsp
+insert-user.jsp
++ 1 header.jsp
+blocks/header.jsp
++ 2 sidebar.jsp
+blocks/sidebar.jsp
++ 3 footer.jsp
+blocks/footer.jsp
+*L
+1,8:53
+8,39:61
+5#1,204:100
+209:304,3
+210,39:307
+46#0,6:346
+5#2,18:352
+23:370,3
+24,33:373
+51#0,380:406
+5#3,11:786
+430#0,21:797
+*E
